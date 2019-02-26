@@ -1,13 +1,28 @@
-{
-  "name": "default",
-  "type": "mongodb",
-  "host": "ds127399.mlab.com",
-  "port": 27399,
-  "username": "osama",
-  "password": "camel-race-results1",
-  "database": "camel-race-results",
-  "useNewUrlParser": true,
-  "synchronize": true,
-  "logging": true,
-  "entities": ["./src/entity/*.ts"]
-}
+[
+  {
+    "name": "default",
+    "type": "mongodb",
+    "host": "ds127399.mlab.com",
+    "port": 27399,
+    "username": "osama",
+    "password": "camel-race-results1",
+    "database": "camel-race-results",
+    "useNewUrlParser": true,
+    "synchronize": true,
+    "logging": true,
+    "entities": ["./src/entity/*.ts"]
+  },
+  {
+    "name": "production",
+    "type": "mongodb",
+    "host": "ds127399.mlab.com",
+    "port": 27399,
+    "username": "osama",
+    "password": "camel-race-results1",
+    "database": "camel-race-results",
+    "useNewUrlParser": true,
+    "synchronize": false,
+    "logging": false,
+    "entities": ["./dist/entity/*.js"]
+  }
+]
